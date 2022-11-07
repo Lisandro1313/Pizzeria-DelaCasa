@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/site-icon.png" type="image/gif" sizes="16x16">
+    <script src="https://kit.fontawesome.com/1178c1936b.js" crossorigin="anonymous"></script>
+    <title>De la Casa | Menú</title>
+</head>
+
+<body>
+    <header class="main-header" id="header-image">
+        <div id="header-headings">
+            <h1>Pizzería</h1>
+            <h1>De la Casa</h1>
+            <h2>Menú</h2>
+        </div>
+    </header>
+    <div class="desktop-nav" id="top">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/site-icon.png">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contacts.html">Contactos</a></li>
+                <li><a href="cart.html" id="cart">Carrito<i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="mobile-nav">
+        <nav class="navbar navbar-dark yellow lighten-1 mb-4">
+            <a href="index.html">
+                <img src="images/site-icon.png" class="mobile-logo">
+            </a>
+            <!-- Collapse button -->
+            <button class="navbar-toggler second-button" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent23" aria-controls="navbarSupportedContent23" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <div class="animated-icon2"><span></span><span></span><span></span><span></span></div>
+            </button>
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent23">
+                <!-- Links -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a href="index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="menu.html" class="nav-link">Menu<span class="sr-only">(Actual)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacts.html" class="nav-link">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cart.html" class="nav-link" id="mobile-cart">Carrito <i
+                                class="fas fa-shopping-cart"></i></a>
+                    </li>
+                </ul>
+                <!-- Links -->
+            </div>
+        </nav>
+    </div>
+    <main class="container container-menu">
+        <img class="pizza-detail" src="images/pizzas/sm/italiana.png" alt="Detalle de pizza">
+        <img class="pizza-detail" src="images/pizzas/sm/italiana.png" alt="Detalle de pizza">
+        <section class="pizza-carousel-menu">
+            <div>
+                <h1 class="carousel-pizza-name">Etcheverry Especial</h1>
+            </div>
+            <div class="carousel-pizza-ingredients">
+                <h2>Ingredientes</h2>
+                <p id="carousel-pizza-ingredients-text">Salsa de tomate, champiñones, jamón, cebolla, morron, queso salado
+                </p>
+            </div>
+
+            <div class="size-button-container">
+                <button class="size-button">C</button>
+                <button class="size-button">M</button>
+                <button class="size-button">G</button>
+            </div>
+            <div class="carousel-price-and-servings-container">
+                <div class="carousel-pizza-servings">
+                    <h2>Número</h2>
+                    <div class=carousel-pizza-buttons-container>
+                        <button class="servings-button">-</button>
+                        <p>01</p>
+                        <button class="servings-button">+</button>
+                    </div>
+                </div>
+
+                <div class="carousel-pizza-price">
+                    <h2>Precio</h2>
+                    <p id="pizza-pricing">1000.00</p>
+                </div>
+            </div>
+
+            <button class="order-button" id="carousel-order-button">Agregar<i class="fas fa-shopping-cart"></i></button>
+
+            <div class="carousel-pizza-directions">
+                <!-- <button id="left-arrow"><i class="fas fa-arrow-left"></i></button>
+                <button id="right-arrow"><i class="fas fa-arrow-right"></i></button> -->
+            </div>
+            <!-- PARA ESTILO -->
+            <div class="carousel-pizzas-overflow-container">
+                <div class="carousel-pizzas">
+                    <div class="carousel-pizza-container">
+                        <img class="carousel-pizza" src="images/pizzas/sm/pizza-etcheverry.png">
+                    </div>
+                    <div class="carousel-pizza-container carousel-pizza-2">
+                        <img class="carousel-pizza" src="images/pizzas/sm/picante-harispe.png">
+                    </div>
+                    <!-- <img src="images/pizzas/sm/american_hot.png">
+                    <img src="images/pizzas/sm/barbecue_classic.png">
+                    <img src="images/pizzas/sm/burger_pizza.png">
+                    <img src="images/pizzas/sm/carbonara.png">
+                    <img src="images/pizzas/sm/chick_chi_rick.png">
+                    <img src="images/pizzas/sm/extravaganza.png">
+                    <img src="images/pizzas/sm/formaggi.png">
+                    <img src="images/pizzas/sm/garden_classic.png">
+                    <img src="images/pizzas/sm/gaucho.png">
+                    <img src="images/pizzas/sm/hawai.png">
+                    <img src="images/pizzas/sm/ham_classic.png"> -->
+                </div>
+            </div>
+        </section>
+
+        <section class="mobile-pizza-menu">
+            <div class="pizza" id="pizza-etcheverry">
+                <figure>
+                    <img class="pizza-image" src="images/pizzas/sm/pizza-etcheverry.png" alt="Pizza Etcheverry">
+                </figure>
+                <div class="pizza-box" data-base-price="1000.00">
+                    <div class="mobile-pizza-header">Etcheverry - especial</div>
+                    <div class="mobile-pizza-ingredients">Salsa de tomate, champiñones, jamón, cebolla, morron, queso salado
+                    </div>
+                    <div class="mobile-pizza-price">De <span class="price-accent">1000.00ARS</span></div>
+                    <div class="buttons">
+                        <div class="size-button-container">
+                            <button class="size-button">C</button>
+                            <button class="size-button">M</button>
+                            <button class="size-button">G</button>
+                        </div>
+                        <button class="order-button">Agregar<i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="pizza" id="picante-harispe">
+                <figure>
+                    <img class="pizza-image" src="images/pizzas/sm/picante-harispe.png" alt="Pizza Picante">
+                </figure>
+                <div class="pizza-box" data-base-price="900.00">
+                    <div class="mobile-pizza-header">Pizza Picante</div>
+                    <div class="mobile-pizza-ingredients">Salsa barbacoa, jalapeño, cebolla</div>
+                    <div class="mobile-pizza-price">De <span class="price-accent">900.00ARS</span></div>
+                    <div class="buttons">
+                        <div class="size-button-container">
+                            <button class="size-button">C</button>
+                            <button class="size-button">M</button>
+                            <button class="size-button">G</button>
+                        </div>
+                        <button class="order-button">Agregar <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="pizza" id="primavera">
+                <figure>
+                    <img class="pizza-image" src="images/pizzas/sm/primavera.png" alt="Pizza Primavera">
+                </figure>
+                <div class="pizza-box" data-base-price="1100.00">
+                    <div class="mobile-pizza-header">Primavera</div>
+                    <div class="mobile-pizza-ingredients">Mozzarella, jamon y huevo</div>
+                    <div class="mobile-pizza-price">De <span class="price-accent">1100.00ARS</span></div>
+                    <div class="buttons">
+                        <div class="size-button-container">
+                            <button class="size-button">C</button>
+                            <button class="size-button">M</button>
+                            <button class="size-button">G</button>
+                        </div>
+                        <button class="order-button">Agregar <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="pizza" id="burger-pizza">
+                <figure>
+                    <img class="pizza-image" src="images/pizzas/sm/pizza-carne.png" alt="Pizza Carne">
+                </figure>
+                <div class="pizza-box" data-base-price="1350.00">
+                    <div class="mobile-pizza-header">Carne</div>
+                    <div class="mobile-pizza-ingredients">Mozzarella, carne de ternera braseada, tomates</div>
+                    <div class="mobile-pizza-price">De <span class="price-accent">1350.00ARS</span></div>
+                    <div class="buttons">
+                        <div class="size-button-container">
+                            <button class="size-button">C</button>
+                            <button class="size-button">M</button>
+                            <button class="size-button">G</button>
+                        </div>
+                        <button class="order-button">Agregar <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="pizza">
+                <figure>
+                    <img class="pizza-image" src="images/pizzas/sm/gulera.png" alt="Pizza Gulera">
+                </figure>
+                <div class="pizza-box" data-base-price="1100.00">
+                    <div class="mobile-pizza-header">Gulera</div>
+                    <div class="mobile-pizza-ingredients">Mozzarella, Pollo, Cherrys</div>
+                    <div class="mobile-pizza-price">De <span class="price-accent">1100.00ARS</span></div>
+                    <div class="buttons">
+                        <div class="size-button-container">
+                            <button class="size-button">C</button>
+                            <button class="size-button">M</button>
+                            <button class="size-button">G</button>
+                        </div>
+                        <button class="order-button">Agregar <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pizza">
+                <figure>
+                    <img class="pizza-image" src="images/pizzas/sm/tropical.png" alt="Pizza Tropical">
+                </figure>
+                <div class="pizza-box" data-base-price="1000.00">
+                    <div class="mobile-pizza-header">Tropical</div>
+                    <div class="mobile-pizza-ingredients">Mozzarella, manzana asada, choclo, cebolla</div>
+                    <div class="mobile-pizza-price">De <span class="price-accent">1000.00ARS</span></div>
+                    <div class="buttons">
+                        <div class="size-button-container">
+                            <button class="size-button">C</button>
+                            <button class="size-button">M</button>
+                            <button class="size-button">G</button>
+                        </div>
+                        <button class="order-button">Agregar <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="pizza">
+                <figure>
+                    <img class="pizza-image" src="images/pizzas/sm/ponsoniosa.png" alt="Pizza Ponsoniosa">
+                </figure>
+                <div class="pizza-box" data-base-price="1300.00">
+                    <div class="mobile-pizza-header">Ponsoniosa</div>
+                    <div class="mobile-pizza-ingredients">Mozzarella, Salame, Morron, Cebolla Morada, Aceitunas negras</div>
+                    <div class="mobile-pizza-price">De <span class="price-accent">1300.00ARS</span></div>
+                    <div class="buttons">
+                        <div class="size-button-container">
+                            <button class="size-button">C</button>
+                            <button class="size-button">M</button>
+                            <button class="size-button">G</button>
+                        </div>
+                        <button class="order-button">Agregar <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="pizza">
+                <figure>
+                    <img class="pizza-image" src="images/pizzas/sm/muzza.png" alt="Muzzarella Clasica">
+                </figure>
+                <div class="pizza-box" data-base-price="900.00">
+                    <div class="mobile-pizza-header">Muzzarella Clasica</div>
+                    <div class="mobile-pizza-ingredients">Salsa de Tomate, Mozzarella de la rica
+                    </div>
+                    <div class="mobile-pizza-price">De <span class="price-accent">900.00ARS</span></div>
+                    <div class="buttons">
+                        <div class="size-button-container">
+                            <button class="size-button">C</button>
+                            <button class="size-button">M</button>
+                            <button class="size-button">G</button>
+                        </div>
+                        <button class="order-button">Agregar <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="pizza">
+                <figure>
+                    <img class="pizza-image" src="images/pizzas/sm/bosque.png" alt="Pizza Del Bosque">
+                </figure>
+                <div class="pizza-box" data-base-price="1200.00">
+                    <div class="mobile-pizza-header">Del Bosque</div>
+                    <div class="mobile-pizza-ingredients">Mozzarella, hongos, morron, aceitunas negras</div>
+                    <div class="mobile-pizza-price">De <span class="price-accent">1200.00ARS</span></div>
+                    <div class="buttons">
+                        <div class="size-button-container">
+                            <button class="size-button">C</button>
+                            <button class="size-button">M</button>
+                            <button class="size-button">G</button>
+                        </div>
+                        <button class="order-button">Agregar <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="pizza">
+                <figure>
+                    <img class="pizza-image" src="images/pizzas/sm/gaucho.png" alt="Pizza Gaucho">
+                </figure>
+                <div class="pizza-box" data-base-price="1100.00">
+                    <div class="mobile-pizza-header">Gaucho</div>
+                    <div class="mobile-pizza-ingredients">Salsa de tomate, cebolla, jalapeño, mozzarella</div>
+                    <div class="mobile-pizza-price">De <span class="price-accent">1100.00ARS</span></div>
+                    <div class="buttons">
+                        <div class="size-button-container">
+                            <button class="size-button">C</button>
+                            <button class="size-button">M</button>
+                            <button class="size-button">G</button>
+                        </div>
+                        <button class="order-button">Agregar <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="pizza">
+                <figure>
+                    <img class="pizza-image" src="images/pizzas/sm/platense.png" alt="Pizza Platense">
+                </figure>
+                <div class="pizza-box" data-base-price="1100.00">
+                    <div class="mobile-pizza-header">Platense</div>
+                    <div class="mobile-pizza-ingredients">Salsa de tomate, piña, jamón mozzarella</div>
+                    <div class="mobile-pizza-price">De <span class="price-accent">1100.00ARS</span></div>
+                    <div class="buttons">
+                        <div class="size-button-container">
+                            <button class="size-button">C</button>
+                            <button class="size-button">M</button>
+                            <button class="size-button">G</button>
+                        </div>
+                        <button class="order-button">Agregar <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="pizza">
+                <figure>
+                    <img class="pizza-image" src="images/pizzas/sm/ervolution.png" alt="Pizza Ervolution">
+                </figure>
+                <div class="pizza-box" data-base-price="1400.00">
+                    <div class="mobile-pizza-header">Ervolution</div>
+                    <div class="mobile-pizza-ingredients">Salsa de tomate, jamón, champiñones, pimiento verde, mozzarella</div>
+                    <div class="mobile-pizza-price">De <span class="price-accent">1400.00ARS</span></div>
+                    <div class="buttons">
+                        <div class="size-button-container">
+                            <button class="size-button">C</button>
+                            <button class="size-button">M</button>
+                            <button class="size-button">G</button>
+                        </div>
+                        <button class="order-button">Agregar <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="footer-credits-section">
+            <p>Etcheverry Lisandro Matías</p>
+            <p>&copy;  Todos los derechos reservados</p>
+        </section>
+    </footer>
+
+    <script src="https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js"></script>
+    <script src="https://unpkg.com/idb-keyval@5.0.6/dist/iife/index-min.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="js/javascript.js"></script>
+
+</body>
+
+</html>

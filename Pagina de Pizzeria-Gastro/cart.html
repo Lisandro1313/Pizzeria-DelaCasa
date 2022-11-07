@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/site-icon.png" type="image/gif" sizes="16x16">
+    <script src="https://kit.fontawesome.com/1178c1936b.js" crossorigin="anonymous"></script>
+    <title>De la Casa | Carrito</title>
+</head>
+
+<body>
+    <header class="main-header" id="header-image">
+        <div id="header-headings">
+            <h1>Pizzería</h1>
+            <h1>De la Casa</h1>
+            <h2>Carrito</h2>
+        </div>
+    </header>
+    <div class="desktop-nav" id="top">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/site-icon.png">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contacts.html">Contactos</a></li>
+                <li><a href="cart.html" id="cart">Carrito <i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="mobile-nav">
+        <nav class="navbar navbar-dark yellow lighten-1 mb-4">
+            <a href="index.html">
+                <img src="images/site-icon.png" class="mobile-logo">
+            </a>
+            <!-- Collapse button -->
+            <button class="navbar-toggler second-button" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent23" aria-controls="navbarSupportedContent23" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <div class="animated-icon2"><span></span><span></span><span></span><span></span></div>
+            </button>
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent23">
+                <!-- Links -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a href="index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html" class="nav-link">Menu<span class="sr-only">(actual)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacts.html" class="nav-link">Contactos</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="cart.html" class="nav-link" id="mobile-cart">Carrito<i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                </ul>
+                <!-- Links -->
+            </div>
+        </nav>
+    </div>
+    <main class="container">
+        <div class="complete-order">
+            <div class="cart-empty">
+                <h2>Su carrito está vacío</h2>
+                <div>Volver a <a href="./menu.html">Menu</a></div>
+            </div>
+            <div class="cart-full">
+            <section class="cart">
+                <h1 class="cart-title">Completar un pedido</h1>
+                <table class="cart-table">
+                    <thead class="cart-header">
+                        <tr>
+                            <th class="cart-table-cell cart-table-header-cell">
+                                <!-- Product image -->
+                            </th>
+                            <th class="cart-table-cell cart-table-header-cell">Producto</th>
+                            <th class="cart-table-cell cart-table-header-cell">Cantidad</th>
+                            <th class="cart-table-cell cart-table-header-cell">Precio</th>
+                        </tr>
+                        <tbody class="cart-products">
+
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td class="cart-footer-cell cart-total-label"><b>Total</b></td>
+                                <td class="cart-footer-cell cart-total"><b>0.00Ars</b></td>
+                            </tr>
+                        </tfoot>
+                    </thead>
+                </table>
+                
+                <template id="cart-template">
+                    <tr class="cart-product-row">
+                        <td class="cart-table-cell cart-table-inner-cell"><img src="image_url" alt="pizza_name" class="cart-product-image"></td>
+                        <td class="cart-table-cell cart-table-inner-cell">
+                            <div class="cart-product-name">
+                                 Nombre de la pizza
+                            </div>
+                            <div class="cart-product-size">Tamaño</div>
+                        </td>
+                        <td class="cart-table-cell cart-table-inner-cell">
+                            <!-- <button class="quantity-button"><img src="./images/minus.svg" alt=""></button>  -->
+                            <button class="blank-button button-minus quantity-button"><i class="quantity-button fas fa-minus button-minus"></i></button>
+                            <span class="cart-product-quantity">Cantidad</span>
+                            <button class="blank-button button-plus quantity-button"><i class="quantity-button fas fa-plus button-plus"></i></button>
+                            <!-- <button class="quantity-button"><img src="./images/plus.svg" alt=""></button></td> -->
+                        <td class="cart-table-cell cart-table-inner-cell cart-product-price">Precio en Ars</td>
+                    </tr>
+                </template>
+                
+                <!-- Background -->
+                <div>
+                    <img class="pizza-detail cart-pizza-detail" src="images/pizzas/sm/italiana.png" alt="Detalle de la pizza">
+                    <img class="pizza-detail cart-pizza-detail" src="images/pizzas/sm/italiana.png" alt="Detalle de la pizza">
+                </div>
+            </section>
+
+            <section class="delivery-details">
+                <h1 class="cart-title delivery-title">Detalles de entrega</h1>
+                <p class="delivery-time-paragraph"><i class="far fa-clock fa-sm" aria-hidden="true"></i>Su pedido será entregado a los <span id="delivery-time">30</span> Min.</p>
+                <form class="delivery-form" action="#order" method="POST">
+                    <div class="input-group">
+                        <div class="input-container">
+                            <label for="fName">Nombre</label>
+                            <input type="text" name="name" placeholder="Nombre" required id="fName">
+                        </div>
+        
+                        <div class="input-container">
+                            <label for="fSurname">Apellido</label>
+                            <input type="text" name="surname" placeholder="Apellido" required id="fSurname">
+                        </div>
+                    </div>
+    
+                    <div class="input-group">
+                        <div class="input-container">
+                            <label for="address">Dirección</label>
+                            <input type="text" name="address" placeholder="Calle N° . &quot;entre,&quot; La Plata" required id="address">
+                        </div>
+                        
+                        <div class="input-container">
+                            <label for="phone">Telefono</label>
+                            <input type="tel" name="phone" placeholder="221-xxxxxx" required id="phone">
+                        </div>
+                    </div>
+    
+                    <div>
+                        <label for="asking">Consulta adicional</label>
+                        <textarea name="asking" placeholder="Consulta adicional..."></textarea>
+                    </div>
+                    <input type="submit" value="pedir" onclick="return Validate()">
+                </form>
+            </section>
+            </div>
+        </div>
+    </main>
+
+        <footer>
+            <section class="footer-credits-section">
+            <p>Etcheverry Lisandro Matías</p>
+            <p>&copy;  Todos los derechos reservados</p>
+            </section>
+        </footer>
+
+        <script src="https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js"></script>
+        <script src="https://unpkg.com/idb-keyval@5.0.6/dist/iife/index-min.js"></script>
+        <script src="js/cart.js"></script>
+        <script src="js/javascript.js"></script>
+    </body>
+</html>
